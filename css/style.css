@@ -4,3 +4,68 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #e5e5e5;
 }
+
+header {
+  width: 100%;
+  height: 54px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+}
+
+.logo {
+  width: 145px;
+  height: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-instagram {
+  font-size: 19.25px;
+  color: #000;
+}
+.barra-logo {
+  width: 1px;
+  height: 22px;
+  background-color: #dbdbdb;
+  margin-bottom: 2px;
+}
+.logo img {
+  width: 103px;
+  margin-top: 5px;
+}
+.pesquisar {
+  background-color: #fafafa;
+  width: 215px;
+  height: 28px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  color: #979797;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  width: 143px;
+  height: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icones {
+  font-size: 18px;
+  color: #000;
+}
+
+/* 
+    Fim Header
+*/
+
+/*
+    Início Main
+*/
