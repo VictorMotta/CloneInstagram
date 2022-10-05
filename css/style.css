@@ -2,6 +2,7 @@
 
 strong {
   font-weight: bold;
+  cursor: pointer;
 }
 body {
   padding-top: 52px;
@@ -66,15 +67,15 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-.icones {
-  font-size: 18px;
-  color: #000;
-}
 
 /* 
     Fim Header
 */
-
+.icones {
+  font-size: 18px;
+  color: #000;
+  cursor: pointer;
+}
 /*
     Início Main
 */
@@ -116,8 +117,9 @@ main {
 }
 .content-feed {
   width: 100%;
-  height: 749px;
-  background-color: purple;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,10 +128,6 @@ main {
 .titulo {
   width: 100%;
   height: 59px;
-  background-color: #fff;
-  border: 1px solid #dbdbdb;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,6 +143,11 @@ main {
 .usuario h1 {
   font-size: 14px;
   font-weight: 500;
+  cursor: pointer;
+}
+
+.usuario img {
+  cursor: pointer;
 }
 
 .titulo ion-icon {
@@ -153,16 +156,10 @@ main {
 
 .img-feed {
   width: 612px;
-  border-left: 1px solid #dbdbdb;
-  border-right: 1px solid #dbdbdb;
 }
 .footer-feed {
   width: 100%;
   height: 76px;
-  background-color: #fff;
-  border: 1px solid #dbdbdb;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
 }
 .actions {
   width: 100%;
@@ -187,6 +184,10 @@ main {
   display: flex;
   align-items: center;
   margin-left: 18px;
+}
+
+.curtidas img {
+  cursor: pointer;
 }
 
 .curtidas p {
