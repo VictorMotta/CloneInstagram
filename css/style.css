@@ -373,3 +373,7 @@ main {
 .rodape h2 {
   margin-top: 18px;
 }
+
+.rodape h1 a:hover {
+  text-decoration: underline;
+}
