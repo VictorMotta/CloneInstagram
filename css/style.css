@@ -1,13 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
 strong {
   font-weight: bold;
   cursor: pointer;
 }
 body {
-  padding-top: 52px;
   font-family: "Roboto", sans-serif;
-  background-color: #e5e5e5;
+  background-color: #fafafa;
 }
 
 header {
@@ -21,6 +28,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 3;
 }
 .container-main-menu {
   width: 935px;
@@ -54,12 +62,15 @@ header {
   height: 28px;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
-  color: #979797;
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
+
+.pesquisar::placeholder {
+  color: #979797;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
 nav {
   width: 143px;
   height: 28px;
@@ -77,39 +88,101 @@ nav {
   cursor: pointer;
 }
 /*
-    Início Main
+    Início conteúdo principal
 */
 
 main {
   width: 100%;
-  height: 100vh;
 }
 
 .container {
   width: 935px;
-  height: 100vh;
-
-  margin: 34px auto;
+  margin: 88px auto;
   display: flex;
   justify-content: space-between;
 }
 .container-principal {
   width: 614px;
-  height: 100vh;
 }
-.container-side-bar {
-  width: 293px;
-  height: 443px;
-  background-color: yellow;
-}
+
+/*
+  Início Container stories
+*/
 .container-stories {
   width: 614px;
   height: 116px;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
   background-color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
+.content-stories {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.storie {
+  width: 66px;
+  position: relative;
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+.img-profile {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.img-profile:nth-child(8) {
+  opacity: 0.5;
+}
+
+.nome-usuario-storie {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.storie p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.proximo-stories {
+}
+
+.icone-arrow {
+  position: absolute;
+  right: 9px;
+  cursor: pointer;
+  font-size: 26px;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.retangulo {
+  width: 28px;
+  height: 100%;
+  background-color: #fafafa;
+  position: absolute;
+  bottom: 0;
+  left: 612px;
+  border-left: 1px solid #dbdbdb;
+}
+.opacity {
+  opacity: 0.7;
+}
+
+/*
+  Início conteúdo feed
+*/
 .container-feed {
   width: 614px;
   height: 100vh;
@@ -135,7 +208,6 @@ main {
 .usuario {
   width: 100px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-left: 17px;
 }
@@ -143,10 +215,12 @@ main {
 .usuario h1 {
   font-size: 14px;
   font-weight: 500;
+  margin-left: 15px;
   cursor: pointer;
 }
 
 .usuario img {
+  width: 32px;
   cursor: pointer;
 }
 
@@ -187,9 +261,115 @@ main {
 }
 
 .curtidas img {
+  width: 20px;
   cursor: pointer;
 }
 
 .curtidas p {
   margin-left: 5px;
+}
+
+/*
+  Início Side bar
+*/
+
+.container-side-bar {
+  width: 293px;
+}
+
+.profile-principal {
+  display: flex;
+  align-items: center;
+  margin-top: 23px;
+}
+.nome-profile-principal {
+  margin-left: 17px;
+}
+
+.nome-profile-principal h1 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: #262626;
+}
+
+.nome-profile-principal p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: #8e8e8e;
+}
+.sugestoes-indice {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sugestoes-indice h1 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.06px;
+  color: #8e8e8e;
+}
+
+.sugestoes-indice p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.06px;
+  color: #262626;
+}
+.sugestoes-perfis {
+  width: 100%;
+}
+.perfil-seguir {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 17px;
+}
+.perfil-foto-e-nome {
+  display: flex;
+}
+.perfil-foto-e-nome img {
+  width: 32px;
+  cursor: pointer;
+}
+.perfil-foto-e-nome div {
+  margin-left: 11px;
+}
+
+.perfil-foto-e-nome div h1 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #262626;
+  line-height: 16px;
+}
+
+.perfil-foto-e-nome div p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #8e8e8e;
+  line-height: 16px;
+}
+.button-seguir {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #139ef2;
+}
+
+.rodape {
+  margin-top: 33px;
+}
+.rodape h1,
+.rodape h1 a,
+.rodape h2 {
+  font-size: 11px;
+  font-weight: 400;
+  color: #c7c7c7;
+  line-height: 13px;
+}
+
+.rodape h2 {
+  margin-top: 18px;
 }
