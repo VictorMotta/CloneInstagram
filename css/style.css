@@ -445,7 +445,7 @@ main {
 }
 
 @media (max-width: 614px){
-  .container-principal,.container-feed,.img-feed, header, .container-principal{
+  header,.container-principal,.container-feed,.img-feed,  .container-principal{
     width: 100%;
   }
 
