@@ -377,3 +377,119 @@ main {
 .rodape h1 a:hover {
   text-decoration: underline;
 }
+/*
+
+  Fim side-bar right
+
+*/
+
+/*
+
+  Início side-bar-menu-responsive
+
+*/
+  
+.show{
+  visibility: hidden;
+}
+
+.side-bar-menu-responsive {
+  width: 100%;
+  height: 54px;
+  background-color: #FFFFFF;
+  border: 1px solid #DBDBDB;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+.menu-bottom {
+  width: 100%;
+  padding: 0 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+
+/*
+
+  Fim side-bar-menu-responsive
+
+*/
+
+/*
+
+  Início Responsividade 935px 
+
+*/
+
+@media (max-width: 935px){
+  .container-main-menu {
+    width: 100%;
+  }
+
+  .container-main-menu{
+    padding: 0 22px;
+  }
+  .container {
+    justify-content: center;
+    
+  }
+
+  .container-side-bar {
+    display: none;
+  }
+
+}
+
+@media (max-width: 614px){
+
+  .hidden {
+    display: none;
+  }
+  .container-main-menu{
+    margin-left: 0;
+  }
+  .logo {
+    width: 55%;
+    
+  }
+  nav {
+    width: 28px;
+    margin-right: 18px;
+  }
+
+  .container-principal,.container-feed,.img-feed,  .container-main-menu, header{
+    width: 100%;
+  }
+  
+  .container {
+    margin-top: 60px;
+  }
+ 
+  
+  .container-stories {
+    width: 103%;
+    height: 80px;
+    background:none;
+    border: none;
+    
+  }
+
+  .content-stories{
+    height: 66px; 
+    margin-left: 15px;
+   }
+ 
+
+  
+  .retangulo, .icone-arrow {
+    display: none;
+  }
+
+  .show{
+    visibility:visible;
+  }
+}
