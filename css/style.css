@@ -445,7 +445,7 @@ main {
 }
 
 @media (max-width: 614px){
-  header,.container-principal,.container-feed,.img-feed,  .container-principal{
+  .container-principal,.container-feed,.img-feed,  .container-principal{
     width: 100%;
   }
 
@@ -461,7 +461,7 @@ main {
   }
   nav {
     width: 28px;
-    margin-right: 18px;
+    margin-right: 4%;
   }
 
   
