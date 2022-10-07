@@ -445,6 +445,9 @@ main {
 }
 
 @media (max-width: 614px){
+  .container-principal,.container-feed,.img-feed, header, .container-principal{
+    width: 100%;
+  }
 
   .hidden {
     display: none;
@@ -461,9 +464,7 @@ main {
     margin-right: 18px;
   }
 
-  .container-principal,.container-feed,.img-feed,  .container-main-menu, header{
-    width: 100%;
-  }
+  
   
   .container {
     margin-top: 60px;
@@ -485,8 +486,9 @@ main {
  
 
   
-  .retangulo, .icone-arrow {
-    display: none;
+  .retangulo {
+    border: none;
+    left: 100%;
   }
 
   .show{
