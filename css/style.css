@@ -150,7 +150,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image:  url(./img/stories_background.png) ;
+  background-image: url(/./img/stories_background.png);
   
 }
 
