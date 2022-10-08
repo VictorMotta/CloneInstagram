@@ -30,11 +30,13 @@ header {
   left: 0;
   z-index: 3;
 }
+
 .container-main-menu {
   width: 935px;
   display: flex;
   justify-content: space-between;
 }
+
 .logo {
   width: 145px;
   height: 29px;
@@ -101,6 +103,7 @@ main {
   display: flex;
   justify-content: space-between;
 }
+
 .container-principal {
   width: 614px;
 }
@@ -122,9 +125,6 @@ main {
 
 }
 
-.container-stories{
-  flex-shrink: 0;
-}
 
 
 .content-stories {
@@ -137,8 +137,12 @@ main {
 }
 
 .storie{
-  margin-left: 11px;
+  width: 66px;
+  margin-left: 2.3%;
+  cursor: pointer;
 }
+
+
 .img-profile {
   width: 66px;
   height: 66px;
@@ -284,6 +288,7 @@ main {
   align-items: center;
   margin-top: 23px;
 }
+
 .nome-profile-principal {
   margin-left: 17px;
 }
@@ -392,27 +397,11 @@ main {
 */
   
 .show{
+  display: none;
   visibility: hidden;
 }
 
-.side-bar-menu-responsive {
-  width: 100%;
-  height: 54px;
-  background-color: #FFFFFF;
-  border: 1px solid #DBDBDB;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-}
-.menu-bottom {
-  width: 100%;
-  padding: 0 22px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
   
 
 /*
@@ -428,51 +417,44 @@ main {
 */
 
 @media (max-width: 935px){
+ 
   .container-main-menu {
     width: 100%;
+    margin-right: 2%;
+    margin-left: 2%;
+  
   }
-
-  .container-main-menu{
-    padding: 0 22px;
-  }
-  .container {
-    justify-content: center;
-    
-  }
-
+  
   .container-side-bar {
     display: none;
+  }
+
+  .container {
+    justify-content: center;
   }
 
 }
 
 @media (max-width: 614px){
-  .container-principal,.container-feed,.img-feed,  .container-principal,.container-stories{
+  .container ,.container-principal, .container-feed,.img-feed,  .container-principal,.container-stories, .content-stories{
     width: 100%;
   }
 
   .hidden {
     display: none;
   }
-  .container-main-menu{
-    margin-left: 0;
-  }
-  .logo {
-    width: 55%;
-    
-  }
-  nav {
-    width: 28px;
-    margin-right: 4%;
-  }
-
-  .container {
-    margin-top: 60px;
-  }
- 
   
+  .logo-responsive-mobile{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 22px;
+  }
+  .container{
+    margin-top: 50px;
+  }
   .container-stories {
-    height: 80px;
     background:none;
     border: none;
     
@@ -480,17 +462,29 @@ main {
 
   .content-stories{
     height: 66px; 
-    margin-left: 15px;
    }
- 
-
   
-  .retangulo {
-    border: none;
-    left: 100%;
-  }
 
   .show{
     visibility:visible;
+  }
+
+  .side-bar-menu-responsive {
+    width: 100%;
+    height: 54px;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+  }
+  .menu-bottom {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
