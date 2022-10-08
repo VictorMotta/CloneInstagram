@@ -116,8 +116,16 @@ main {
   background-color: #fff;
   display: flex;
   align-items: center;
-  position: relative;
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
 }
+
+.container-stories{
+  flex-shrink: 0;
+}
+
 
 .content-stories {
   width: 100%;
@@ -125,20 +133,23 @@ main {
   display: flex;
   justify-content: space-between;
   position: relative;
+
 }
 
-.storie {
-  width: 66px;
-  position: relative;
-  margin-left: 14px;
-  cursor: pointer;
+.storie{
+  margin-left: 11px;
 }
-
 .img-profile {
-  position: absolute;
-  top: 5px;
-  left: 5px;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:  url(/img/stories_background.png) ;
+  
 }
+
 
 .img-profile:nth-child(8) {
   opacity: 0.5;
@@ -154,12 +165,11 @@ main {
   font-weight: 400;
 }
 
-.proximo-stories {
-}
 
 .icone-arrow {
   position: absolute;
-  right: 9px;
+  top: 25px;
+  right: 15px;
   cursor: pointer;
   font-size: 26px;
   color: white;
@@ -167,15 +177,7 @@ main {
   box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
-.retangulo {
-  width: 28px;
-  height: 100%;
-  background-color: #fafafa;
-  position: absolute;
-  bottom: 0;
-  left: 612px;
-  border-left: 1px solid #dbdbdb;
-}
+
 .opacity {
   opacity: 0.7;
 }
@@ -445,7 +447,7 @@ main {
 }
 
 @media (max-width: 614px){
-  .container-principal,.container-feed,.img-feed,  .container-principal{
+  .container-principal,.container-feed,.img-feed,  .container-principal,.container-stories{
     width: 100%;
   }
 
@@ -464,15 +466,12 @@ main {
     margin-right: 4%;
   }
 
-  
-  
   .container {
     margin-top: 60px;
   }
  
   
   .container-stories {
-    width: 103%;
     height: 80px;
     background:none;
     border: none;
