@@ -6,6 +6,7 @@
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 strong {
@@ -150,7 +151,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/../img/stories_background.png);
+  background-image: url(https://raw.githubusercontent.com/VictorMotta/clone_instagram/master/img/stories_background.png);
   
 }
 
@@ -254,6 +255,9 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.main-actions a{
+  margin-left:  5px;
 }
 
 .bookmark {
