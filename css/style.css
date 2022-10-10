@@ -239,7 +239,7 @@ main {
 }
 .footer-feed {
   width: 100%;
-  height: 76px;
+  padding: 25px 0;
 }
 .actions {
   width: 100%;
@@ -247,6 +247,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 }
 .main-actions {
   width: 88px;
@@ -277,6 +278,138 @@ main {
 .curtidas p {
   margin-left: 5px;
 }
+
+.descricao-comentarios{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.descricao-publicacao {
+  display: flex;
+  margin: 20px 0;
+}
+
+.descricao-publicacao h1{
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.descricao-publicacao p{
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.show-comentarios{
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #8E8E8E;
+  cursor: pointer;
+}
+
+.send-comentarios{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.send-comentarios ion-icon{
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.send-comentarios input {
+  width: 80%;
+  border: none;
+}
+
+.send-comentarios input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.send-comentarios input::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+.send-comentarios h2 {
+  font-size: 16px;
+  color: #B2DFFC;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.send-comentarios h2:hover{
+  color:#0095F6;
+}
+
+
+
+.comentario{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.comentario img {
+  width: 33px;
+  height: 33px;
+  cursor: pointer;
+}
+
+.comentario-curtida {
+  width: 80%;
+}
+.nome-comentario{
+  display: flex;
+  margin-bottom: 20px;
+}
+.nome-comentario h1{
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nome-comentario p{
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.tempo-curtida-responder {
+  display: flex;
+  
+}
+
+.tempo-curtida-responder p{
+  font-size: 14px;
+  color: #8E8E8E;
+  font-weight: 400;
+}
+
+.tempo-curtida-responder h1{
+  font-size: 16px;
+  color: #8E8E8E;
+  font-weight: bold;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.comentario ion-icon{
+  transition: 300ms;
+  font-size: 20px;
+  cursor: pointer;
+}
+.comentario ion-icon:hover{
+  color:#0095F6 ;
+}
+
+
+
 
 /*
   Início Side bar
