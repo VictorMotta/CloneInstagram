@@ -348,6 +348,9 @@ main {
 }
 
 
+.comentarios-container{
+  display: none;
+}
 
 .comentario{
   display: flex;
